@@ -12,7 +12,8 @@ I will not explain how every part works, as I've written that months ago (back i
 
 ## Sections
 
-### reverse(n)
+<details>
+<summary><h3>reverse(n)</h3></summary>
 
 ![image](https://github.com/user-attachments/assets/153a551b-6a4b-4af5-9ee4-4feabf5b01a8)
 
@@ -44,4 +45,4 @@ reverse(314159265) = 562951413
  
 - ![image](https://github.com/user-attachments/assets/b64231af-7790-4766-acd5-75c81aa77c25)
   - This part multiplies the current value held by the sum by a string of 1's with the same length categorized by the current position of the value, and plus one decimal place so the value is not 10 times higher than it should be.
-
+</details>
