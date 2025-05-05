@@ -1,0 +1,22 @@
+  " This is a text file containing functions written in Desmos' notation.
+  " You can copy-paste them directly into Desmos Graphing Calculator for visualization and usage.
+  " NOTE: This is not executable code, nor valid LaTeX. It uses Desmos' custom notation and works only within Desmos.
+  " WARNING: These comments are not valid in Desmos. Only copy the content inside the COPY blocks.
+  " Original creator: dedetive.
+
+" COPY:
+
+r_{everse}\left(n\right)=\sum_{i=0}^{\operatorname{ceil}\left(\log_{10}\left(n+1\right)\right)}\left(\operatorname{mod}\left(\operatorname{floor}\left(\frac{n}{10^{i}}\right),10\right)\cdot10^{\operatorname{ceil}\left(\log_{10}\left(n+1\right)\right)-i-1}\right)
+d_{ec}\left(n\right)=\sum_{j=1}^{9}\sum_{k=0}^{\operatorname{ceil}\left(\log_{10}\left(n+1\right)\right)}j\cdot10^{\left(\sum_{a=0}^{j-1}\sum_{b=0}^{\operatorname{ceil}\left(\log_{10}\left(n+1\right)\right)}\left\{\operatorname{mod}\left(\operatorname{floor}\left(\frac{n}{10^{b}}\right),10\right)=a,0\right\}+\sum_{b=0}^{k-1}\left\{\operatorname{mod}\left(\operatorname{floor}\left(\frac{n}{10^{b}}\right),10\right)=j,0\right\}-1\right)}\cdot\left\{\operatorname{mod}\left(\operatorname{floor}\left(\frac{n}{10^{k}}\right),10\right)=j,0\right\}
+a_{sc}\left(n\right)=r_{everse}\left(d_{ec}\left(n\right)\right)
+
+" END
+
+  " Usage:
+
+" COPY:
+
+a_{sc}\left(15234\right)
+r_{everse}\left(2951413\right)
+
+" END
