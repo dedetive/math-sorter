@@ -23,7 +23,7 @@ Returns the reverse of a number's digits. It's also used internally by `asc(n)` 
 
 #### Examples
 
-```python
+```
 reverse(10) = 1
 reverse(25) = 52
 reverse(52) = 25
@@ -38,7 +38,7 @@ reverse(314159265) = 562951413
 
 #### Notable parts
 
-- `python ceil(log_10(n+1))` is commonly used to determine the length of the integer number. It is also possibly the reason this function breaks when using very large numbers in Desmos. It first gets the log of 10 of the input (and a helper 1), which will output a number with increasingly more decimal places and then applies ceil to get its upper integer rounding. It needs the helper 1 because log of 10 of exactly 10 would input 1, and thus its ceil would also be 1 instead of its true length. A valid, possibly more precision-friendly, equivalent alternative would be `python floor(log_10(n))`.
+- `ceil(log_10(n+1))` is commonly used to determine the length of the integer number. It is also possibly the reason this function breaks when using very large numbers in Desmos. It first gets the log of 10 of the input (and a helper 1), which will output a number with increasingly more decimal places and then applies ceil to get its upper integer rounding. It needs the helper 1 because log of 10 of exactly 10 would input 1, and thus its ceil would also be 1 instead of its true length. A valid, possibly more precision-friendly, equivalent alternative would be `floor(log_10(n))`.
 
 - ![image](https://github.com/user-attachments/assets/82d9c8b2-4146-435f-84e1-73a3d51e109b)
   - This gets the proper sum of all digits within the integer input. For example, the input 115766 would output the equivalent of 1+1+5+7+6+6, which is 26.
@@ -59,7 +59,7 @@ Sorts the digits of an integer in **descending** order.
 
 #### Examples
 
-```python
+```
 dec(1512) = 5211
 dec(9229191) = 9992211
 dec(010080) = 81000
@@ -89,7 +89,7 @@ Sorts the digits of an integer in **ascending** order. Internally, it performs `
 
 #### Examples
 
-```python
+```
 asc(1512) = 1125
 asc(9229191) = 1122999
 asc(010080) = 18
